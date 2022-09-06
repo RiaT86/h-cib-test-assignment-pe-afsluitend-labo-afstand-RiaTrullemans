@@ -86,9 +86,18 @@ Alhoewel er geen feature branch aanwezig is voor House Greyjoy, werd de beschrij
       Noteer de **commit hash** van deze commit. Je kan dit via Git Bash lokaal doen, of op GitHub.
 
 - [ ] Maak lokaal een nieuwe branch **feature/house-greyjoy** vanaf **dev** en ga meteen naar deze nieuwe branch.
-- [ ] Voer een git commando uit om de commit waarin de beschrijving van House Greyjoy werd toegevoegd aan `README.md` over te zetten naar deze branch `feature/house-greyjoy`.
+- [ ] Voer een git commando uit om de commit waarin de beschrijving van House Greyjoy werd toegevoegd aan `README.md` over te zetten naar deze branch `feature/house-greyjoy`. **Opgelet:** dit zal een conflict veroorzaken, we lossen dit straks op.
 
 >**Tip!** Als onderdeel van dit commando heb je de commit hash nodig die je eerder noteerde.
+
+- [ ] Het overzetten van de commit naar de nieuwe branch **feature/house-greyjoy** veroorzaakt een conflict.
+      Dit komt omdat de betreffende commit gebaseerd is op een andere git geschiedenis dan deze op de huidige branch.
+      We kunnen dit conflict oplossen net zoals we een merge conflict oplossen bij het mergen van twee branches.
+
+- [ ] Los het conflict in `README.md` op (bv. in Visual Studio Code). We willen de beschrijving van House Stark en House Greyjoy behouden.
+      De flarden van de beschrijving van House Lannister die meekomen in het conflict, willen we **niet** behouden.
+
+- [ ] Bewaar je aanpassingen in `README.md` en commit je oplossing van het conflict.
 
 - [ ] Synchroniseer je nieuwe lokale branch **feature/house-greyjoy** naar de remote op GitHub.
 
