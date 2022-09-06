@@ -8,8 +8,9 @@ Er zijn in de startsituatie van het labo reeds enkele branches aanwezig:
 * **dev**
 * enkele **feature** branches
 
-Op de **master** branch vind je enkel de opgave van het labo, je zal in het labo ook **NOOIT** de **master** branch aanpassen.
-De **dev** branch zal je in het labo wel verschillende keren updaten, telkens door het mergen van **feature** branches (zowel reeds bestaande als nog aan te maken feature branches).
+Op de **master** branch vind je de opgave van het labo.
+Tijdens de uitwerking van het labo, zal je verschillende **feature** branches naar **dev** mergen (zowel reeds bestaande als nog aan te maken feature branches).
+De **master** branch wordt enkel aangepast op het einde van het labo.
 
 ### Aanvullende toetsen
 
@@ -148,4 +149,12 @@ Het conflict is nu opgelost! Dat zou ook zichtbaar moeten zijn in de pull reques
 - [ ] Ga op GitHub naar de nog openstaande pull request die **feature/house-greyjoy** in **dev** zal mergen.
 - [ ] Verifieer dat het merge conflict verholpen is en dat de pull request nu probleemloos kan afgewerkt worden.
 - [ ] Werk de pull request af zodat de merge ook effectief plaatsvindt.
+
+# Deel 7: release van dev naar master
+
+- [ ] Maak nu een laatste pull request op GitHub, die de branch **dev** zal mergen in **master**.
+  
+Ook hier ontstaat weer een conflict, omdat de README op **master** de instructies voor het labo bevat, terwijl op **dev** hier de beschrijving van House Baratheon, Stark en Greyjoy in terechtgekomen is.
+
+- [ ] Los het conflict op. Kies zelf of je het deze keer via GitHub doet of lokaal. Als resultaat willen we de instructies van het labo (die oorspronkelijk op **master**) stonden volledig **overschrijven** met de beschrijving van de Houses (die binnenkomen via **dev**).
 
