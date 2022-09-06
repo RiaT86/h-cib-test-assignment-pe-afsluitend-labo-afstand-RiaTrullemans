@@ -13,7 +13,7 @@ De **dev** branch zal je in het labo wel verschillende keren updaten, telkens do
 
 ### Aanvullende toetsen
 
-**Opgelet:** bij dit labo horen **twee** aanvullende toetsen op Leho:
+**Opgelet:** bij dit labo horen **TWEE** aanvullende toetsen op Leho:
 1. De eerste toets maak je **VOOR** je aan het labo begint. Hierin worden enkele inzichtsvragen gesteld over de **startsituatie** van het labo. Eventueel kan je wel al de remote repo van het labo **clonen** naar je lokale pc, als je liever via Git Bash de nodige opzoekingen doet binnen de repo dan op GitHub.
 2. De tweede toets maak je zoals gewoonlijk **na** afronden van het labo.
 
@@ -110,7 +110,7 @@ Er staan nu twee pull requests open op GitHub.
  
 - [ ] Ga naar de pull request die **feature/house-baratheon** zal mergen in **dev**.
 - [ ] Verifieer dat er geen conflicten ontstaan bij deze merge.
-- [ ] Werk de pull request af zodat de merge effectie uitgevoerd wordt.
+- [ ] Werk de pull request af zodat de merge effectief uitgevoerd wordt.
 
 Nu staat er nog maar één pull request open. Deze zal echter wel een conflict geven.
 
