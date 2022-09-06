@@ -8,8 +8,8 @@ Er zijn in de startsituatie van het labo reeds enkele branches aanwezig:
 * **dev**
 * enkele **feature** branches
 
-Op de **master** branch vind je enkel de opgave van het labo, je zal in het labo ook nooit de **master** branch aanpassen.
-De **dev** branch zal je in het labo verschillende keren updaten, telkens door het mergen van **feature** branches (zowel reeds bestaande als nog aan te maken feature branches).
+Op de **master** branch vind je enkel de opgave van het labo, je zal in het labo ook **NOOIT** de **master** branch aanpassen.
+De **dev** branch zal je in het labo wel verschillende keren updaten, telkens door het mergen van **feature** branches (zowel reeds bestaande als nog aan te maken feature branches).
 
 ### Aanvullende toetsen
 
@@ -26,17 +26,19 @@ Je kan/mag de aanvullende toetsen steeds afleggen gebruik makend van alle bronne
 - [ ] Ga **na het clonen** via de Console naar de gecloonde repository. Dit kan/mag je uiteraard ook doen door de nieuwe aangemaakt folder aan te klikken en hier opnieuw een Git Bash console te openen via de **Git Bash Here** optie.
 >**Tip!** Controleer voor je verder werkt of je al dan niet in de juiste git repository zit! Je kan dit snel visueel vaststellen in je console.
 
-### Deel 2: project aanmaken
+### Deel 3: issues aanmaken
 
-- [ ] Maak in je GitHub repo een project aan met de naam **Great Houses**.
-- [ ] Maak voor elk van de reeds aanwezige **feature** branches een issue aan op GitHub. Geef de issues een duidelijke titel. Voor de branch **feature/house-stark** kan je de issue bv. als titel **House Stark** geven.
-- [ ] Voeg alle issues toe aan je project board.
+- [ ] Maak voor elk van de reeds aanwezige **feature** branches een issue aan op GitHub. Geef de issues een duidelijke titel.
+
+>**Tip!** Voor de branch **feature/house-stark** kan je de issue bv. als titel **House Stark** geven.
 
 ### Deel 3: verwijderen oude feature branch
 
 In de startsituatie is een van de aanwezige feature branches eigenlijk al gemerged naar **dev**.
 
 - [ ] Zoek uit (via Git Bash of op GitHub) welke van de feature branches al naar **dev** werd gemerged.
-- [ ] Verwijder deze feature branch uit je lokale repository, met het gepaste git commando.
-- [ ] Voer nu het gepaste git commando uit om deze feature branch ook te verwijderen uit je remote repo.
+- [ ] Verwijder deze feature branch uit je **lokale** repository, met het gepaste git commando.
+- [ ] Voer nu het gepaste git commando uit om deze feature branch ook te verwijderen uit je **remote** repo.
+- [ ] Sluit het **issue** (manueel) af dat bij deze featue branch hoort.
+
 
