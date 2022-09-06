@@ -26,7 +26,7 @@ Je kan/mag de aanvullende toetsen steeds afleggen gebruik makend van alle bronne
 - [ ] Ga **na het clonen** via de Console naar de gecloonde repository. Dit kan/mag je uiteraard ook doen door de nieuwe aangemaakt folder aan te klikken en hier opnieuw een Git Bash console te openen via de **Git Bash Here** optie.
 >**Tip!** Controleer voor je verder werkt of je al dan niet in de juiste git repository zit! Je kan dit snel visueel vaststellen in je console.
 
-### Deel 3: issues aanmaken
+### Deel 2: issues aanmaken
 
 - [ ] Maak voor elk van de reeds aanwezige **feature** branches een issue aan op GitHub. Geef de issues een duidelijke titel.
 
