@@ -41,7 +41,7 @@ In de startsituatie is een van de aanwezige feature branches eigenlijk al gemerg
 
 >**Tip!** Indien je de betreffende branch intussen ook lokaal had uitgecheckt, voer dan gerust ook het gepaste git commando uit om deze branch ook lokaal terug te verwijderen. Als je de branch nooit lokaal uitcheckte, hoef je ze uiteraard ook niet te verwijderen lokaal, want dan heeft ze daar nooit bestaan.
 
-- [ ] Sluit het **issue** (manueel) af dat bij deze featue branch hoort.
+- [ ] Sluit het **issue** (manueel) af dat bij deze feature branch hoort.
 
 ### Deel 4: House Baratheon
 
