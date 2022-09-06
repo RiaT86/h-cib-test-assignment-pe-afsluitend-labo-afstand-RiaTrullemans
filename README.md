@@ -150,7 +150,7 @@ Het conflict is nu opgelost! Dat zou ook zichtbaar moeten zijn in de pull reques
 - [ ] Verifieer dat het merge conflict verholpen is en dat de pull request nu probleemloos kan afgewerkt worden.
 - [ ] Werk de pull request af zodat de merge ook effectief plaatsvindt.
 
-# Deel 7: release van dev naar master
+### Deel 7: release van dev naar master
 
 - [ ] Maak nu een laatste pull request op GitHub, die de branch **dev** zal mergen in **master**.
 - [ ] Ken jezelf als *assignee* toe aan de pull request.
