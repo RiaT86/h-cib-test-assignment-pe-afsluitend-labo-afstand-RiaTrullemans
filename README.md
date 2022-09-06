@@ -153,8 +153,10 @@ Het conflict is nu opgelost! Dat zou ook zichtbaar moeten zijn in de pull reques
 # Deel 7: release van dev naar master
 
 - [ ] Maak nu een laatste pull request op GitHub, die de branch **dev** zal mergen in **master**.
+- [ ] Ken jezelf als *assignee* toe aan de pull request.
   
 Ook hier ontstaat weer een conflict, omdat de README op **master** de instructies voor het labo bevat, terwijl op **dev** hier de beschrijving van House Baratheon, Stark en Greyjoy in terechtgekomen is.
 
 - [ ] Los het conflict op. Kies zelf of je het deze keer via GitHub doet of lokaal. Als resultaat willen we de instructies van het labo (die oorspronkelijk op **master**) stonden volledig **overschrijven** met de beschrijving van de Houses (die binnenkomen via **dev**).
+- [ ] Werk de pull request af zodat **dev** effectie in **master** wordt gemerged.
 
