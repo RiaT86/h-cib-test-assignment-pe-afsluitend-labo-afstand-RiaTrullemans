@@ -37,8 +37,10 @@ Je kan/mag de aanvullende toetsen steeds afleggen gebruik makend van alle bronne
 In de startsituatie is een van de aanwezige feature branches eigenlijk al gemerged naar **dev**.
 
 - [ ] Zoek uit (via Git Bash of op GitHub) welke van de feature branches al naar **dev** werd gemerged.
-- [ ] Verwijder deze feature branch uit je **lokale** repository, met het gepaste git commando.
-- [ ] Voer nu het gepaste git commando uit om deze feature branch ook te verwijderen uit je **remote** repo.
+- [ ] Voer het gepaste git commando uit in je Git Bash console om deze feature branch te verwijderen uit je **remote** repo.
+
+>**Tip!** Indien je de betreffende branch intussen ook lokaal had uitgecheckt, voer dan gerust ook het gepaste git commando uit om deze branch ook lokaal terug te verwijderen. Als je de branch nooit lokaal uitcheckte, hoef je ze uiteraard ook niet te verwijderen lokaal, want dan heeft ze daar nooit bestaan.
+
 - [ ] Sluit het **issue** (manueel) af dat bij deze featue branch hoort.
 
 ### Deel 4: House Baratheon
