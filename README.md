@@ -90,7 +90,7 @@ Alhoewel er geen feature branch aanwezig is voor House Greyjoy, werd de beschrij
 
 >**Tip!** Als onderdeel van dit commando heb je de commit hash nodig die je eerder noteerde.
 
-- [ ] Het overzetten van de commit naar de nieuwe branch **feature/house-greyjoy** veroorzaakt een conflict.
+- [ ] Het overzetten van de commit naar de nieuwe branch **feature/house-greyjoy** veroorzaakt een **conflict**.
       Dit komt omdat de betreffende commit gebaseerd is op een andere git geschiedenis dan deze op de huidige branch.
       We kunnen dit conflict oplossen net zoals we een merge conflict oplossen bij het mergen van twee branches.
 
@@ -98,6 +98,7 @@ Alhoewel er geen feature branch aanwezig is voor House Greyjoy, werd de beschrij
       De flarden van de beschrijving van House Lannister die meekomen in het conflict, willen we **niet** behouden.
 
 - [ ] Bewaar je aanpassingen in `README.md` en commit je oplossing van het conflict.
+      Laat je indien nodig inspireren door de voorstellen die git geeft om de juiste commando's te vinden om de conflictoplossing af te ronden.
 
 - [ ] Synchroniseer je nieuwe lokale branch **feature/house-greyjoy** naar de remote op GitHub.
 
@@ -108,7 +109,7 @@ Alhoewel er geen feature branch aanwezig is voor House Greyjoy, werd de beschrij
 - [ ] Synchroniseer de branch naar de remote.
 
 - [ ] Open op GitHub een **pull request** om de branch **feature/house-greyjoy** te mergen in **dev**.
-- [ ] Ook hier onstaat een merge conflict in de pull request. **!! WACHT** nog even om deze pull request verder af te werken, daar komen we zo meteen op terug.
+- [ ] Verifieer dat er **geen** merge conflict onstaat in de pull request, maar **WACHT** nog even om deze pull request verder af te werken, daar komen we zo meteen op terug.
 - [ ] Ken jezelf toe als *assignee* van de pull request.
 - [ ] Link **op GitHub** deze pull request aan het issue van House Greyjoy.
 
@@ -124,10 +125,11 @@ Er staan nu twee pull requests open op GitHub.
 - [ ] Los het conflict op **via GitHub**. Het conflict is ontstaan omdat vanuit parallele branches zowel de uitleg van House Stark als House Baratheon werd toegevoegd aan `README.md`. We willen beide secties in de README behouden, onder elkaar. Let er ook op dat de afbeelding met het embleem van House Baratheon niet verloren gaat.
 - [ ] Werk vervolgens de pull request af zodat de merge effectief uitgevoerd wordt.
 
-Nu staat er nog maar één pull request open. Ook deze bevat een conflict.
+Nu staat er nog maar één pull request open.
+Deze bevatte oorspronkelijk geen conflict t.o.v. van **dev**, maar door de eerste pull request in **dev** te mergen is de situatie veranderd.
 
 - [ ] Ga naar de pull request die **feature/house-greyjoy** zal mergen in **dev**.
-- [ ] Verifieer dat er ook hier een merge conflict ontstaat, waardoor de pull request niet zomaar gemerged kan worden.
+- [ ] Verifieer dat ook hier nu een merge conflict ontstaat, waardoor de pull request niet zomaar gemerged kan worden.
 
 We gaan dit conflict **lokaal** in Git Bash oplossen.
 
