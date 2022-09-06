@@ -32,7 +32,7 @@ Je kan/mag de aanvullende toetsen steeds afleggen gebruik makend van alle bronne
 
 >**Tip!** Voor de branch **feature/house-stark** kan je de issue bv. als titel **House Stark** geven.
 
-### Deel 3: verwijderen oude feature branch
+### Deel 3: verwijderen reeds gemergde feature branch
 
 In de startsituatie is een van de aanwezige feature branches eigenlijk al gemerged naar **dev**.
 
@@ -41,4 +41,98 @@ In de startsituatie is een van de aanwezige feature branches eigenlijk al gemerg
 - [ ] Voer nu het gepaste git commando uit om deze feature branch ook te verwijderen uit je **remote** repo.
 - [ ] Sluit het **issue** (manueel) af dat bij deze featue branch hoort.
 
+### Deel 4: House Baratheon
+
+- [ ] Ga lokaal in Git Bash naar de branch **feature/house-baratheon**.
+- [ ] Download de afbeelding (PNG) met het [embleem van House Baratheon](https://www.kindpng.com/picc/m/455-4550587_storms-end-game-of-thrones-houses-game-of.png) naar je lokale PC.
+- [ ] Maak een map aan in de root van je repo met de naam `houses/`.
+- [ ] Plaats de afbeelding die je gedownload hebt in deze map `houses/` en verander de naam naar `baratheon.png`.
+- [ ] Open het bestand `README.md` (bv. in Visual Studio code). Voeg onderaan deze regel toe:
+
+```
+![](houses/baratheon.png)
+```
+
+- [ ] Bewaar je wijziging, maar **wacht** nog even om een commit te maken.
+- [ ] Voer het gepaste git commando uit om een overzicht te krijgen van de wijzigingen die klaar staan in de working directory.
+
+Je zal zien dat de wijziging aan `README.md` getoond wordt, maar de toegevoegde afbeelding `houses/baratheon.png` **niet**.
+Dit komt door de reeds aanwezige gitignore, die alle bestanden behalve Markdown bestanden in de map `houses` uitsluit.
+
+- [ ] Open de **gitignore** file (bv. in Visual Studio code).
+- [ ] Voeg een regel toe zodat ook alle bestanden met extensie `.png` in de map `houses` opgenomen worden in het versiebeheer.
+- [ ] Pas de regel commentaar bovenaan de gitignore aan in lijn met deze wijziging.
+- [ ] Bewaar de aanpassingen aan de **gitignore**.
+- [ ] Voer opnieuw hetzelfde git commando als hierboven uit om na te gaan welke wijzigingen klaar staan in de working directory. Nu zou je drie wijzigingen moeten zien:
+  - Aanpassing aan `README.md`.
+  - Aanpassing aan de **gitignore**.
+  - Toevoeging van afbeelding `houses/baratheon.png`.
+
+- [ ] Commit deze drie wijzigingen naar je lokale repo (samen in één commit). **Verwijs in je commit message naar de bijhorende issue op GitHub**, op zo'n manier dat deze issue **automatisch afgesloten zal worden** zodra we de commit in de master branch zullen mergen.
+- [ ] Synchroniseer naar de remote repository op GitHub.
+
+- [ ] **Open** op GitHub een **pull request** om de branch **feature/house-baratheon** in **dev** te mergen.
+- [ ] **!! WACHT** nog even om de pull request effectief te mergen, daar komen we later op terug.
+- [ ] Ken jezelf toe als *assignee* van de pull request.
+
+### Deel 5: House Greyjoy
+
+Alhoewel er geen feature branch aanwezig is voor House Greyjoy, werd de beschrijving hiervan per ongeluk wel toegevoegd op een andere, foute branch.
+
+- [ ] Maak voor House Greyjoy een **issue** aan op GitHub.
+- [ ] Zoek uit op welke branch de beschrijving van House Greyjoy werd toegevoegd aan `README.md` en in welke commit.
+      Noteer de **commit hash** van deze commit. Je kan dit via Git Bash lokaal doen, of op GitHub.
+
+- [ ] Maak lokaal een nieuwe branch **feature/house-greyjoy** vanaf **dev** en ga meteen naar deze nieuwe branch.
+- [ ] Voer een git commando uit om de commit waarin de beschrijving van House Greyjoy werd toegevoegd aan `README.md` over te zetten naar deze branch `feature/house-greyjoy`.
+
+>**Tip!** Als onderdeel van dit commando heb je de commit hash nodig die je eerder noteerde.
+
+- [ ] Synchroniseer je nieuwe lokale branch **feature/house-greyjoy** naar de remote op GitHub.
+
+>**Tip!** Denk eraan dat je hier iets extra moet doen omdat de nieuwe lokale branch nog niet bestaat op de remote.
+
+- [ ] Keer lokaal terug naar de branch waarop de overgezette commit oorspronkelijk (en foutief) werd doorgevoerd.
+- [ ] Gebruik het gepaste git commando om deze commit op die foute branch ongedaan te maken **met behoud van de reeds bestaande git geschiedenis**.
+- [ ] Synchroniseer de branch naar de remote.
+
+- [ ] Open op GitHub een **pull request** om de branch **feature/house-greyjoy** te mergen in **dev**.
+- [ ] **!! WACHT** nog even om deze pull request effectief te mergen, daar komen we zo meteen op terug.
+- [ ] Ken jezelf toe als *assignee* van de pull request.
+- [ ] Link **op GitHub** deze pull request aan het issue van House Greyjoy.
+
+>**Tip!** In de cursus wordt niet expliciet vermeld hoe je een issue manueel aan een pull request kan koppelen op GitHub (we deden het daar enkel via de commit message).
+Zoek even uit hoe je de link rechtstreeks op GitHub kan leggen. Kijk even welke knoppen en invulvelden er allemaal zijn op de pull request pagina.
+
+### Deel 6: pull requests afwerken
+
+Er staan nu twee pull requests open op GitHub.
+ 
+- [ ] Ga naar de pull request die **feature/house-baratheon** zal mergen in **dev**.
+- [ ] Verifieer dat er geen conflicten ontstaan bij deze merge.
+- [ ] Werk de pull request af zodat de merge effectie uitgevoerd wordt.
+
+Nu staat er nog maar één pull request open. Deze zal echter wel een conflict geven.
+
+- [ ] Ga naar de pull request die **feature/house-greyjoy** zal mergen in **dev**.
+- [ ] Verifieer dat er een merge conflict ontstaat, waardoor de pull request niet zomaar gemerged kan worden.
+
+We gaan dit conflict **lokaal** in Git Bash oplossen.
+
+- [ ] Ga lokaal naar de **dev** branch.
+- [ ] Breng deze lokale **dev** branch up to date met de wijzigingen die op de remote gebeurden (door de eerste PR te mergen).
+- [ ] Ga lokaal nu naar de branch **feature/house-greyjoy**.
+- [ ] Merge **LOKAAL** de branch **dev** in **feature/house-greyjoy**.
+- [ ] Bij deze merge zou nu ook hetzelfde conflict moeten ontstaan dat reeds door GitHub in de pull request was gesignaleerd.
+- [ ] Los het merge conflict lokaal op. We willen gewoon dat de beschrijving van zowel House Baratheon als House Greyjoy mooi onder elkaar in de `README.md` komen.
+- [ ] Let er zeker ook op dat de afbeelding van het embleem van House Baratheon niet verloren gaat.
+- [ ] Bewaar je wijziging die het conflict oplost.
+- [ ] Commit je wijziging naar de lokale git repo.
+- [ ] Synchroniseer de branch **feature/house-greyjoy** nu naar de remote.
+
+Het conflict is nu opgelost! Dat zou ook zichtbaar moeten zijn in de pull request.
+
+- [ ] Ga op GitHub naar de nog openstaande pull request die **feature/house-greyjoy** in **dev** zal mergen.
+- [ ] Verifieer dat het merge conflict verholpen is en dat de pull request nu probleemloos kan afgewerkt worden.
+- [ ] Werk de pull request af zodat de merge ook effectief plaatsvindt.
 
