@@ -158,5 +158,5 @@ Het conflict is nu opgelost! Dat zou ook zichtbaar moeten zijn in de pull reques
 Ook hier ontstaat weer een conflict, omdat de README op **master** de instructies voor het labo bevat, terwijl op **dev** hier de beschrijving van House Baratheon, Stark en Greyjoy in terechtgekomen is.
 
 - [ ] Los het conflict op. Kies zelf of je het deze keer via GitHub doet of lokaal. Als resultaat willen we de instructies van het labo (die oorspronkelijk op **master**) stonden volledig **overschrijven** met de beschrijving van de Houses (die binnenkomen via **dev**).
-- [ ] Werk de pull request af zodat **dev** effectie in **master** wordt gemerged.
+- [ ] Werk de pull request af zodat **dev** effectief in **master** wordt gemerged.
 
