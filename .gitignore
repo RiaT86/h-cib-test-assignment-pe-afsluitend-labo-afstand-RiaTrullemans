@@ -1,3 +1,4 @@
-# ignore all files in "houses" folder except Markdown files
+# ignore all files in "houses" folder except Markdown files and PNG files
 houses/*
 !houses/*.md
+!houses/*.png
